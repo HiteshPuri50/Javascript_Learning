@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style>
+        .diviclass {
+            text-align: center;
+            margin: 14px;
+            font-size: 20px;
+        }
+
+        .artclass {
+            text-align: center;
+            margin: 14px;
+            font-size: 20px;
+
+        }
+
+        input[type=text],
+        [type=number] {
+            border: none;
+        }
+
+        #prime {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="diviclass">
+        <label for="cel"></label>
+        <input type="number" id="cel" placeholder="Enter value of Celsius">
+        <input type="number" id="cel_result" placeholder="Resultant Fahrenheit">
+    </div>
+    <article class="artclass"><button type="button" onclick="convert_Cel_2_Far()">Convert celcius into
+            Fahrenheit</button>
+
+    </article>
+    <div class="diviclass">
+        <label for="far"></label>
+        <input type="number" id="far" placeholder="Enter value of fahrenheit">
+        <input type="number" id="far_result" placeholder="Resultant celcius">
+    </div>
+    <article class="artclass">
+        <button type="button" onclick="convert_Far_2_Cel()">Convert Fahrenheit into celcius</button>
+    </article>
+</body>
+<script>
+    function convert_Cel_2_Far() {
+        var celcius = parseInt(document.getElementById('cel').value);
+        fahrenheit = celcius * (9 / 5) + 32;
+        document.getElementById('cel_result').value = fahrenheit;
+    }
+    function convert_Far_2_Cel() {
+        var fahrenheit = document.getElementById('far').value;
+        celcius = ((fahrenheit - 32) * 5) / 9;
+        document.getElementById('far_result').value = celcius;
+    }
+</script>
+
+</html>

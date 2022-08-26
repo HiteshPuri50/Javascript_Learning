@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chkPrime</title>
+    <style>
+        .diviclass {
+            text-align: center;
+            margin: 14px;
+            font-size: 20px;
+        }
+
+        .artclass {
+            text-align: center;
+            margin: 14px;
+            font-size: 20px;
+
+        }
+
+        input[type=text],
+        [type=number] {
+            border: none;
+        }
+
+        #prime {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="diviclass" onmouseover="this.style.backgroundColor='Voilet'">
+        <label for="prime"></label>
+        <input type="number" min="1" step="1" id="prime" placeholder="Enter any number">
+    </div>
+    <article class="artclass">
+        <button type="button" onclick="chkPrime()">Enter number</button>
+        <p id="result_prime"></p>
+    </article>
+</body>
+<script>
+    function chkPrime() {
+        let i = document.getElementById('prime').value;
+        if (i.length == "") {
+            alert("This is not a valid Number");
+        }
+
+        else if (i == 0 || i == 1) {
+            document.getElementById('result_prime').innerHTML = i + "is not Prime Number";
+        }
+        else {
+            for (let n = 2; i > n; n++) {
+                if (i % n == 0) {
+                    document.getElementById('result_prime').innerHTML = i + " is not Prime Number";
+                    break;
+                }
+                else {
+                    document.getElementById('result_prime').innerHTML = i + " is prime number";
+                }
+            }
+        }
+    }
+</script>
+
+</html>
