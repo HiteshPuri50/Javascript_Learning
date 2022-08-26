@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+    <style>
+        .div1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <input type="string" id="demo" placeholder="Enter Your String">
+        <button type="button" onclick="palindrome()">Check Palindrome</button>
+        <p id="result"></p>
+    </div>
+</body>
+<script>
+    function palindrome() {
+        x = document.getElementById("demo").value;
+        z = x.trim();
+        z = z.toLowerCase();
+        let y = "";
+        for (i = z.length - 1; i >= 0; i--) {
+            y += z[i];
+        }
+        console.log(x);
+        console.log(typeof (x));
+        console.log(y);
+        console.log(typeof (y));
+        console.log(x[0])
+        if (x == y) {
+            document.getElementById('result').innerHTML = x + " is Palindrome";
+        }
+        else {
+            document.getElementById('result').innerHTML = x + " is not Palindrome";
+        }
+    }
+</script>
+
+</html>
