@@ -10,15 +10,14 @@
 </head>
 
 <body>
-
+<nav>
+    <button type="button" onclick="tasks.sort()">Sort</button>
+</nav>
     <div id = "div1">
         <input type="text" id="SaveNote" placeholder="Enter Your Notes">
-        <!-- <input type="date" id="date" placeholder="Enter Last Date"> -->
         <button type="button" onclick="tasks.add(SaveNote.value)">Save</button>
         <h3 style="margin: 35px;">ToDo-List</h3>
         <ul id="newresult"></ul>
-        <!-- <h3>In Progress</h3>
-        <ol id = "working"></ol> -->
     </div>
 </body>
 <script src="script.js">
