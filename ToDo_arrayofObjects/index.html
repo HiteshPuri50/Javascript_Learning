@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo</title>
-    <link rel="stylesheet" href="ToDo.css">
+
 </head>
 
 <body>
-<nav>
-    <button type="button" onclick="tasks.sort()">Sort</button>
-</nav>
+    
+
     <div id = "div1">
         <input type="text" id="SaveNote" placeholder="Enter Your Notes">
-        <button type="button" onclick="tasks.add(SaveNote.value)">Save</button>
+
+        <button type="button" onclick="tasks.send(SaveNote.value)">Save</button>
+        <button type="button" onclick="sortList()">Sort</button>
         <h3 style="margin: 35px;">ToDo-List</h3>
         <ul id="newresult"></ul>
+
     </div>
 </body>
 <script src="script.js">
