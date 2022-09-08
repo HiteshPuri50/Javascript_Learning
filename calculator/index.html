@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <table>
+            <tr colspan="4">
+                <td colspan="4"><input type="text" id="textval"></td>
+            </tr>
+            <tr>
+                <td><button type="button" value="7" onclick="display('7')"><img src="symb/seven.png"></button></td>
+                <td><button type="button" value="8" onclick="display('8')"><img src="symb/eight.png"></button></td>
+                <td><button type="button" value="9" onclick="display('9')"><img src="symb/nine.png"></button></td>
+                <td><button type="button" value="DEL" onclick="deletee()"><img src="symb/garbage.png"></button></td>
+            </tr>
+            <tr>
+                <td><button type="button" value="4" onclick="display('4')"><img src="symb/four.png"></button></td>
+                <td><button type="button" value="5" onclick="display('5')"><img src="symb/five.png"></button></td>
+                <td><button type="button" value="6" onclick="display('6')"><img src="symb/six.png"></button></td>
+                <td><button type="button" value="+" onclick="display('+')"><img src="symb/add.png"></button></td>
+            </tr>
+            <tr>
+                <td><button type="button" value="1" onclick="display('1')"><img src="symb/one.png"></button></td>
+                <td><button type="button" value="2" onclick="display('2')"><img src="symb/two.png"></button></td>
+                <td><button type="button" value="3" onclick="display('3')"><img src="symb/three.png"></button></td>
+                <td><button type="button" value="-" onclick="display('-')"><img src="symb/minus.png"></button></td>
+            </tr>
+            <tr>
+                <td><button type="button" value="." onclick="display('.')"><img src="symb/full-stop.png"></button></td>
+                <td><button type="button" value="0" onclick="display('0')"><img src="symb/zero.png"></button></td>
+                <td><button type="button" value="/" onclick="display('/')"><img src="symb/division-symbol.png"></button></td>
+                <td><button type="button" value="*" onclick="display('*')"><img src="symb/x.png"></button></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><button type="button" value="RESET" onclick="reset()"><img src="symb/undo-arrow.png"></button></td>
+                <td colspan="3"><button type="button" value="=" onclick="answer()"><img src="symb/equal.png"></button></td>
+            </tr>
+        </table>
+    
+</body>
+<script src="script.js">
+</script>
+</html> 

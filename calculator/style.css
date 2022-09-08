@@ -1,0 +1,33 @@
+body{
+    align-items: center;
+    background-color:hsl(224, 36%, 15%);
+}
+table{
+    border: 2;
+    width:"300";
+    height:"200px"
+}
+button[type="button"]
+{
+border-radius: 10px;
+background-color:hsl(225, 21%, 49%);
+color: white;
+border-color:#black ;
+width:100%;
+}
+input[type="text"]
+{
+border-radius: 10px;
+text-align: right;
+background-color:black;
+color: white;
+border-color: white;
+width:98%
+}
+img{
+    width: 50;
+    height: 50;
+}
+button > img {
+    width: 40px;
+}
