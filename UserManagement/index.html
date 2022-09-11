@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <style>
+        .container{
+            margin: 12%;
+            text-align: center;
+            font-size: medium;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container > .btnRegister{
+            width: 10%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .css-table{
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            min-width: 400px;
+            border-radius : 5px 5px 0 0;
+            overflow : hidden;
+            /* box-shadow 0 0 20px  */
+
+        }
+        .css-table th tr{
+            background-color: #009879;
+            color: white;
+            text-align: left;
+            font-weight: bold;
+        }
+        .css-table th, .css-table td {
+            padding: 12px 15px; 
+        }
+        .css-table tr {
+            border-bottom: 1px solid whitesmoke;
+            text-align: center;
+        }
+        .css-table tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+        .css-table tr:last-of-type {
+            border-bottom:2px solid #009879;
+
+        }
+        .css-table tr .active-row{
+            font-weight: bold;
+            color: #009879;
+        }
+    </style>
+</head>
+<body>
+    <form class = 'container' onsubmit="register.get(); return false;">
+        <label for="Name">Your Name</label>
+        <br>
+        <input type="text" id="Name" value="" placeholder="Enter Your Name" required />
+        <br><br>
+        <lable for="userName">Your Username</lable>
+        <br>
+        <input type="text" id="userName" value="" placeholder="Enter UserName" required />
+        <br><br>
+        <label for="email">Email address</label>
+        <br>
+        <input type="email" id="email" placeholder="gmail, yahoo, msn, outlook Supported" required />
+        <!-- pattern="+@gmail.com, +@yahoo.com, +msn.com, +outlook.com" -->
+        <br><br>
+        <label for="mobile">Mobile Number</label>
+        <br>
+        <input type="tel" id="phone" required />
+        <br><br>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" id="password" required />
+        <br><br>
+        <label for="Date">Date of Joining</label>
+        <br>
+        <input type="date" id="Date" required />
+        <br><br>
+        <input type = "submit" />
+        <input type="reset" value="Clear" />
+    </form>
+    <table id="js-table" class="css-table" border="1px">
+        <tr>
+            <th>Name</th>
+            <th>UserName</th>
+            <th>Email address</th>
+            <th>Mobile</th>
+            <th>Status</th>
+            <th>Created Date</th>
+            <th>Action</th>
+        </tr>
+    </table>
+</body>
+<script src="script.js"></script>
+</html>
