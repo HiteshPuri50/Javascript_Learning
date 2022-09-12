@@ -42,35 +42,33 @@ const register = {
         cellStatus.innerHTML = `${this.details.isStatus}`
         cellDate.innerHTML = `${this.details.date}`;
         let btn_view = document.createElement('button');
-        btn_view.setAttribute('onclick', 'view()');
+        
         btn_view.innerHTML = "View";
         let btn_edit = document.createElement('button');
-        btn_edit.setAttribute('id', '#btn_view');
+        // btn_edit.setAttribute('id', '#btn_view');
         btn_edit.innerHTML = "Edit";
         let btn_remove = document.createElement('button');
-        btn_remove.setAttribute('onclick', 'remove()');
+        // btn_remove.setAttribute('onclick', 'remove()');
         btn_remove.innerHTML = "Remove";
         let btn_changeStatus = document.createElement('button');
-        btn_changeStatus.setAttribute('id', '#btn_view');
-        btn_changeStatus.innerHTML = "Disable";
+        // btn_changeStatus.setAttribute('id', '#btn_view');
+        btn_changeStatus.innerHTML = "Active";
         cellAction.append(btn_view, btn_edit, btn_remove, btn_changeStatus);
         this.persons.forEach((row) => {
             btn_view.onclick = () => {
 
             };
             btn_changeStatus.onclick = (isStatus) => {
-                var table = document.getElementById('js-table'),
-                    rIndex;
-                for (var i = 0; i < table.rows.length; i++) {
-                    table.rows[i].onclick = function () {
-                        if (this.persons[i].isStatus) {
-                            alert('Are you sure to change the status to Active');
-                            isStatus = 'Active';
-                            cellStatus.innerHTML = 'Active';
-                            alert("Active");
-                        }
+                var status = document.getElementsByTagName('td')[4].textContent;
 
-                    }
+                if(status == 'InActive'){
+                    document.getElementsByTagName('td')[4].textContent = 'Active';
+                    btn_changeStatus.innerHTML = 'InActive';
+                    btn_changeStatus.setAttribute('color', 'red');
+                }
+                else {
+                    document.getElementsByTagName('td')[4].textContent = 'InActive';
+                    btn_changeStatus.innerHTML = 'Active'
                 }
             };
             btn_remove.onclick = (row) => {
@@ -101,8 +99,24 @@ const register = {
                     table.rows[rIndex].cells[5].innerHTML = document.querySelector('#Date').value;
                     btn_edit.innerHTML = "Edit";
                 }
-
             }
         });
     },
+    search: function() {
+        let search = document.querySelector('#js-search').value.toUpperCase();
+        let table = document.querySelector('#js-table');
+        let tr = table.getElementsByTagName('tr');
+        for(var i = 0; i< tr.length; i++){
+            let td = tr[i].getElementsByTagName('td')[0];
+            if(td) {
+                let value = td.textContent || td.innerHTML;
+                if(value.toUpperCase().indexOf(search) > -1) {
+                    tr[i].style.display = "";
+                }
+                else {
+                    tr[i].style.display = "None";
+                }
+            }
+        }
+    }
 }
