@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='container'>
+        <button type="button" id="red">red</button>
+        <button type="button" id="blue">blue</button>
+        <button type="button" id="yellow">yellow</button>
+        <button type="button" id="green">green</button>
+        <button type="button" id="none">None</button>
+    </div>
+</body>
+<script>
+    let div = document.querySelector('.container');
+    console.log(div);
+    let red = document.querySelector('#red');
+    red.addEventListener('click', function () {
+        div.classList.remove('blue');
+        div.classList.remove('green');
+        div.classList.remove('yellow');
+        div.classList.add('red')
+    });
+    let blue = document.querySelector('#blue');
+    blue.addEventListener('click', function () {
+        div.classList.remove('green');
+        div.classList.remove('yellow');
+        div.classList.remove('red');
+        div.classList.add('blue');
+    }); let yellow = document.querySelector('#yellow');
+    yellow.addEventListener('click', function () {
+        div.classList.remove('blue');
+        div.classList.remove('red');
+        div.classList.remove('green');
+        div.classList.add('yellow')
+    }); let green = document.querySelector('#green');
+    green.addEventListener('click', function () {
+        div.classList.remove('blue');
+        div.classList.remove('red');
+        div.classList.remove('yellow');
+        div.classList.add('green')
+    });
+    let none = document.querySelector('#none');
+    none.addEventListener('click', function () {
+        div.classList.remove('blue');
+        div.classList.remove('red');
+        div.classList.remove('yellow');
+        div.classList.remove('green')
+    });
+</script>
+
+</html>

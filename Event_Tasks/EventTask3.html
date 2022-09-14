@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .class {
+        color: red;
+    }
+
+    .black {
+        color: black;
+    }
+</style>
+
+<body>
+    <ul class="1">
+        <li class="last">One
+            <ul class="2">
+                <li>Two</li>
+                <li>Three</li>
+                <li class="last">Four
+                    <ul class="3">
+                        <li>Five</li>
+                        <li>Six</li>
+                        <li>Seven</li>
+                        <li class="last">Eight
+                            <ul class="4">
+                                <li>Nine</li>
+                                <li class="last">Ten
+                                    <ul>
+                                        <li>Eleven</li>
+                                        <li class="last">Tweleve</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+<script>
+    let ul = document.querySelectorAll('ul');
+    ul.forEach((li) => {
+        let newLi = li.querySelector('ul li:last-child');
+        newLi.addEventListener('click', function () {
+            let li1 = newLi.querySelector('li:first-child');
+            li1.classList.add('class');
+        });
+    });
+</script>
+
+</html>
