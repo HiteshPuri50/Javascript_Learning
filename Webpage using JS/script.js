@@ -132,12 +132,16 @@ massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. <br>`;
         let buying = document.createElement('div'),
             buynow = document.createElement('button'),
             offer = document.createElement('button');
+
+        let hide = document.createElement('p');
+        hide.classList.add('bought');
+        hide.innerHTML = `<h3>You already Bought this Item</h3>`
         buynow.innerHTML = 'Buy Now';
         offer.innerHTML = 'Make an Offer';
 
         buynow.setAttribute('id', 'buyNow');
         offer.setAttribute('id', 'offer');
-        buying.append(buynow, offer);
+        buying.append(buynow, offer, hide);
 
         // console.log(buying);
         //PRODUCT IMAGES
@@ -232,13 +236,11 @@ massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. <br>`;
             <button type="button" class="visitButton">Visit Store</button>
         </div>
     </div>`;
-        // author.append(seller,'Seller details');
         //Appending
 
         document.body.append(author);
 
         //SIMILAR PRODUCTS
-        // for (var i = 0; i < 12; i++) {
         let similarGallary = [{
                 phone: 'amir-hanna-sweUF7FcyP4-unsplash.jpg'
             },
@@ -403,6 +405,36 @@ massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. <br>`;
 
         document.body.append(foot);
 
+        let copyright = document.createElement('div'),
+            copy = document.createElement('div'),
+            silos = document.createElement('p');
+        copyright.classList.add('copyright')
+        copy.classList.add('copy');
+        silos.innerHTML = 'silos.com/copyright 2021. All rights Reserved';
+        copy.append(silos);
+        copyright.append(copy);
+
+        let icon = document.createElement('div'),
+            icon1 = document.createElement('p'),
+            icon2 = document.createElement('p'),
+            icon3 = document.createElement('p'),
+
+            fb = document.createElement('img'),
+            twitter = document.createElement('img'),
+            insta = document.createElement('img');
+
+        icon.classList.add('icon');
+        fb.src = "facebook.svg";
+        twitter.src = "twitter.svg";
+        insta.src = "instagram.svg";
+
+        icon1.append(fb);
+        icon2.append(twitter);
+        icon3.append(insta);
+        icon.append(icon1, icon2, icon3);
+        copyright.append(icon);
+        document.body.append(copyright);
+
         // Events
         offer.addEventListener('click', () => {
             offerModal.classList.toggle('offerModal')
@@ -457,4 +489,8 @@ massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. <br>`;
                 counter = counter - 1;
                 numberspan.innerHTML = counter;
             }
+        })
+        buynow.addEventListener('click', () => {
+            buynow.classList.add('btnBuy');
+            hide.classList.toggle('bought');
         })
