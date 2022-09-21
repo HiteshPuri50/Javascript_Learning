@@ -1,431 +1,460 @@
 .header {
-    margin: -8px;
-    padding-top: 0px;
-    background-color: black;
-    height: 55px;
+  margin: -8px;
+  padding-top: 0px;
+  background-color: black;
+  height: 55px;
 }
 
 #navBar {
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
-#navBar input[type=text] {
-    margin-left: 10px;
-    margin-top: 7px;
-    height: 40px;
-    border: none;
-    border-radius: 4px;
-    width: 375px;
-    align-items: center;
-    justify-content: center;
+#navBar input[type="text"] {
+  margin-left: 10px;
+  margin-top: 7px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  width: 375px;
+  align-items: center;
+  justify-content: center;
 }
 
 #navBar > button {
-    cursor: pointer;
-    border: 1px solid white;
-    border-radius: 4px;
-    padding: 8px;
-    color: white;
-    margin-top: 10px;
-    /* height: 25px;  */
-    float: right;
-    margin-right: 140px;
-    background-color: transparent;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 8px;
+  color: white;
+  margin-top: 10px;
+  /* height: 25px;  */
+  float: right;
+  margin-right: 140px;
+  background-color: transparent;
 }
 img {
-    border-radius: 20px;
+  border-radius: 20px;
 }
-.select{
-    margin-left: 400px;
-    background-color: #0052cc;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+.select {
+  margin-left: 400px;
+  background-color: #0052cc;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
 
 .pictures {
-    display: flex;
-    flex-wrap: wrap;  
-    vertical-align: middle;
-    width: 50%;
-    display: contents;
-    vertical-align: top;
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  width: 50%;
+  display: contents;
+  vertical-align: top;
 }
 
 .details {
-    float: right;
-    padding-right: 125px;
-    position: relative;
-    padding-top: 20px;
+  float: right;
+  padding-right: 125px;
+  position: relative;
+  padding-top: 20px;
 }
 
 .div {
-    padding-bottom: 1050px;
+  padding-bottom: 1100px;
 }
 
 h1 {
-    font-weight: normal;
-    font-size: 35px;
-    font-family: sans-serif;
+  font-weight: normal;
+  font-size: 35px;
+  font-family: sans-serif;
 }
 
 .productDetails > p {
-    float: right;
+  float: right;
 }
 
 #description {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 #price {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 #phonecolor {
-    border: white;
-    border-radius: 50%;
-    margin: 4px 2px;
-    padding: 15px;
-    cursor: pointer;
+  border: white;
+  border-radius: 50%;
+  margin: 4px 2px;
+  padding: 15px;
+  cursor: pointer;
 }
 
-.gray{
-    background-color: rgb(130, 130, 130);
+.gray {
+  background-color: rgb(130, 130, 130);
 }
 
-.red{
-    background-color: red;
+.red {
+  background-color: red;
 }
 
-.green{
-    background-color: rgb(1, 60, 1);
+.green {
+  background-color: rgb(1, 60, 1);
 }
 
-.silver{
-    background-color: rgb(217, 214, 214);
+.silver {
+  background-color: rgb(217, 214, 214);
 }
-.counter{
-    width: 150px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.counter {
+  width: 150px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.counter input{
-    width: 50px;
-    border: 0;
-    line-height: 30px;
-    font-size: 18px;
-    text-align: center;
-    background: transparent;
-    color: black;
-    appearance: none;
-    outline: 0;
+.counter input {
+  width: 50px;
+  border: 0;
+  line-height: 30px;
+  font-size: 18px;
+  text-align: center;
+  background: transparent;
+  color: black;
+  appearance: none;
+  outline: 0;
 }
-.counter .up .down{
-    display: block;
-    font-size: 22px;
-    padding: 0 10px;
-    cursor: pointer;
-    color: #0052cc;
-    user-select: none;
+.counter .up .down {
+  display: block;
+  font-size: 22px;
+  padding: 0 10px;
+  cursor: pointer;
+  color: #0052cc;
+  user-select: none;
 }
-.delu{
-    display: block;
+.delu {
+  display: block;
 }
 #deliveryType {
-    cursor: pointer;
-    width: 30%;
-    padding: 10px 12px;
-    margin-left: 5px;
-    border: 1px solid rgb(211, 209, 209);
-    background-color: transparent;
-    border-radius: 5px;
+  cursor: pointer;
+  width: 30%;
+  padding: 10px 12px;
+  margin-left: 5px;
+  border: 1px solid rgb(211, 209, 209);
+  background-color: transparent;
+  border-radius: 5px;
 }
 
 #fade {
-    color: gray;
+  color: gray;
 }
 #quantity-area {
-    margin-top: 10px;
-    border: none;
-    width: 100px;
-    height: 33px;
-    font-size: 20px;
-    display: inline-block;
-    vertical-align: top;
-    line-height: 30px;
-    text-align: center;
-    /* background: rgb(243, 243, 236); */
-    border: 1px solid rgb(243, 237, 237);
+  margin-top: 10px;
+  border: none;
+  width: 100px;
+  height: 33px;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 30px;
+  text-align: center;
+  /* background: rgb(243, 243, 236); */
+  border: 1px solid rgb(243, 237, 237);
 }
 a {
-    font-weight: normal;
-    color: black;
+  font-weight: normal;
+  color: black;
 }
 #buyNow {
-    padding: 10px;
-    width: 50%;
-    border: none;
-    font-size: 13px;
-    border-radius: 5px;
-    color: white;
-    background-color: rgba(52, 126, 251);
+  cursor: pointer;
+  padding: 10px;
+  width: 50%;
+  border: none;
+  font-size: 13px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(52, 126, 251);
 }
 
 #offer {
-    padding: 10px 80px;
-    margin-left: 5px;
-    border: none;
-    font-size: 13px;
-    border-radius: 5px;
-    color: white;
-    background-color: orange;
+  padding: 10px 80px;
+  margin-left: 5px;
+  border: none;
+  font-size: 13px;
+  border-radius: 5px;
+  color: white;
+  background-color: orange;
 }
 
 #offerModal {
-    display: table;
-    overflow-y: auto;    
-    overflow-x: auto;   
-    width: auto;
-    min-width: 300px;
-    margin-top: 15px;
-    border: 1px solid black;
-    padding-left: 25px;
-    border-radius: 18px;
+  display: table;
+  overflow-y: auto;
+  overflow-x: auto;
+  width: auto;
+  min-width: 300px;
+  margin-top: 15px;
+  border: 1px solid black;
+  padding-left: 25px;
+  border-radius: 18px;
 }
 .offerModal {
-    display: table; 
-    overflow-y: auto;    
-    overflow-x: auto;   
-    visibility: hidden;
+  display: table;
+  overflow-y: auto;
+  overflow-x: auto;
+  visibility: hidden;
 }
 
 #deliveryAddress {
-    border: 1px solid rgb(195, 193, 193);
-    padding: 15px;
-    padding-right: 25%;
-    border-radius: 8px;
+  border: 1px solid rgb(195, 193, 193);
+  padding: 15px;
+  padding-right: 25%;
+  border-radius: 8px;
 }
 #submitOffer {
-    padding: 10px 120px;
-    margin-top: 10px;
-    border: none;
-    font-size: 13px;
-    border-radius: 5px;
-    color: white;
-    background-color: orange;
+  padding: 10px 120px;
+  margin-top: 10px;
+  border: none;
+  font-size: 13px;
+  border-radius: 5px;
+  color: white;
+  background-color: orange;
 }
 
 #online {
-    width: 20%;
-    padding: 10px 12px;
-    border: 1px solid rgb(211, 209, 209);
-    background-color: transparent;
-    border-radius: 5px;
+  width: 20%;
+  padding: 10px 12px;
+  border: 1px solid rgb(211, 209, 209);
+  background-color: transparent;
+  border-radius: 5px;
 }
 
 .flex {
-    columns: flex;
-    padding-left: 150px;
+  columns: flex;
+  padding-left: 150px;
 }
 
 .mainPicture {
-    width: 250px;
+  width: 250px;
 }
 
 .links {
-    float: left;
-    padding-left: 150px;
+  float: left;
+  padding-left: 200px;
 }
-
 .copyright {
-    float: left;
-    padding-left: 150px;
+  float: left;
+  padding-left: 150px;
 }
-.imageGrid{
-    margin-top: 20px;
-    border-radius: 20px;
-    padding-left: 125;
-    display: grid;
-    grid-gap: 15px;
+.imageGrid {
+  margin-top: 20px;
+  border-radius: 20px;
+  padding-left: 125;
+  display: grid;
+  grid-gap: 15px;
 }
 .imageGrid img {
-    border-radius: 20px;
-    margin-top: 15px;
-    margin-left: 100px;
-    float: left;
-    width: 170px;
-    height: 160px;
-    object-fit: cover;
-    cursor: pointer;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-left: 100px;
+  float: left;
+  width: 170px;
+  height: 160px;
+  object-fit: cover;
+  cursor: pointer;
 }
-.imageGrid img:hover{
-    transform: scale(1.2);
+.imageGrid img:hover {
+  transform: scale(1.2);
 }
-.big{
-    border-radius: 20px;
-    width: 450px;
-    height: 530px;
-    margin-top: 34px;
-    margin-left: 20px;
+.big {
+  border-radius: 20px;
+  width: 450px;
+  height: 530px;
+  margin-top: 34px;
+  margin-left: 20px;
 }
-span{
-    padding-top: 12px;
-    padding-bottom: 12px;
-    display: block;
+span {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: block;
 }
 .padd {
-    border-radius: 20px;
-    padding-left: 150px;
-    padding-right: 150px;
+  border-radius: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
-.minus{
-    border: none;
-    font-size: 45px;
-    cursor: pointer;
-    background-color:transparent;
-    margin-top: -10px;
-    padding: 8px 15px;
+.minus {
+  border: none;
+  font-size: 45px;
+  cursor: pointer;
+  background-color: transparent;
+  margin-top: -10px;
+  padding: 8px 15px;
 }
-.plus{
-    border: none;
-    font-size: 40px;
-    cursor: pointer;
-    background-color:transparent;
-    margin-top: -7px;
-    padding: 8px 15px;
+.plus {
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  background-color: transparent;
+  margin-top: -7px;
+  padding: 8px 15px;
 }
 .similar {
-    margin-top: 0px;
-    box-sizing: border-box;
-    box-shadow: 50px;
-    padding-left: 50px;
-    float: left;
+  margin-top: 0px;
+  box-sizing: border-box;
+  box-shadow: 50px;
+  padding-left: 50px;
+  float: left;
 }
 
 .gallery {
-    border-radius: 20px;
-    box-shadow: 5px 5px rgb(246, 245, 245);
-    margin-top: 55px;
+  border-radius: 20px;
+  box-shadow: 5px 5px rgb(246, 245, 245);
+  margin-top: 55px;
 }
 
 .gallery .imga {
-    margin-top: 0px;
-    width: 225px;
-    height: 250px
+  margin-top: 0px;
+  width: 225px;
+  height: 250px;
 }
 
 .des {
-    padding: 15px;
-    text-align: center;
+  padding: 15px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 700px) {
-    .gallery {
-        width: 50%;
-        margin: 6px 0;
-    }
+  .gallery {
+    width: 50%;
+    margin: 6px 0;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    .gallery {
-        width: 100%;
-    }
+  .gallery {
+    width: 100%;
+  }
 }
 
 .similarPrice {
-    margin-top: 20px;
-    color: blue;
-    float: left;
+  margin-top: 20px;
+  color: blue;
+  float: left;
 }
 .shopping {
-    padding-right: 150px;
-    padding-top: 50px;
-    float: right;
-    list-style: none;
+  padding-right: 75px;
+  padding-top: 50px;
+  float: right;
+  list-style: none;
 }
 
 .shopping li {
-    margin: 15px;
+  margin: 15px;
 }
-
+.btnBuy {
+  visibility: hidden;
+}
+.bought {
+  visibility: hidden;
+}
 .links {
-    padding-top: 50px;
-    padding-right: 150px;
-    float: right;
-    list-style: none;
+  padding-top: 50px;
+  padding-right: 250px;
+  float: right;
+  list-style: none;
 }
 
 .links li {
-    color: black;
-    display: block;
-    margin: 15px;
+  color: black;
+  display: block;
+
+  margin: 15px;
 }
 
 .promises {
-    padding-top: 50px;
-    padding-left: 250px;
-    float: left;
+  padding-top: 50px;
+  padding-left: 250px;
+  float: left;
 }
-.p{
-    text-align: center;
-    background-color: rgb(246, 242, 242);
+.p {
+  text-align: center;
+  background-color: rgb(246, 242, 242);
 }
 .gridImg {
-    border-radius: 20px;
-    float: left;
-    display: flex;
-    flex:left;
+  border-radius: 20px;
+  float: left;
+  display: flex;
+  flex: left;
 }
 .imageGrid {
-    border-radius: 20px;
-    padding-left: 150;
-    box-sizing: border-box;
-    display: grid;
-    grid-gap: 10px;
+  border-radius: 20px;
+  padding-left: 150;
+  box-sizing: border-box;
+  display: grid;
+  grid-gap: 10px;
 }
 .author {
-    box-shadow: 5px 5px rgb(246, 245, 245);
-    display: flex;
-    text-align: center;
-    justify-content: center;
+  box-shadow: 5px 5px rgb(246, 245, 245);
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
-.img{
-    margin-top: 5px;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
+.img {
+  margin-top: 5px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
 }
 .authorprofile {
-    margin-top: 55px;
-    display: flex;
+  margin-top: 55px;
+  display: flex;
 }
 
 .authorButton {
-    cursor: pointer;
-    margin-top: 20px;
-    border: 1px solid blue;
-    padding: 5px 10px;
-    color: blue;
-    width: 100px;
-    border-radius: 25px;
-    background-color: transparent;
+  cursor: pointer;
+  margin-top: 20px;
+  border: 1px solid blue;
+  padding: 5px 10px;
+  color: blue;
+  width: 100px;
+  border-radius: 25px;
+  background-color: transparent;
 }
 
 .visitButton {
-    cursor: pointer;
-    border: 1px solid blue;
-    background-color: blue;
-    color: white;
-    width: 100px;
-    padding: 5px 10px;
-    border-radius: 25px;
+  cursor: pointer;
+  border: 1px solid blue;
+  background-color: blue;
+  color: white;
+  width: 100px;
+  padding: 5px 10px;
+  border-radius: 25px;
 }
-.authorprofile > div{
-    padding-left: 100px;
+.authorprofile > div {
+  padding-left: 100px;
+}
+.copyright {
+  width: 1480px;
+  background-color: rgb(194, 194, 194);
+  padding: 10px 15px;
+}
+.copyright img {
+  padding-left: 20px;
+  width: 30px;
+  height: 30px;
+  opacity: 50%;
+}
+.copyright img:hover {
+  opacity: 100%;
+}
+.copy {
+  float: left;
+  padding-left: 150px;
+}
+.icon {
+  width: 300px;
+  display: flex;
+  float: right;
 }
