@@ -1,0 +1,32 @@
+*{
+  font-weight: bold;
+  font-family: sans-serif;
+}
+button {
+  font-weight: normal;
+  cursor: pointer;
+  border: 1px solid rgb(78, 6, 247);
+  border-radius: 4px;
+  padding: 8px;
+  color: black;
+  margin-left: 12px;
+  background-color: transparent;
+}
+input {
+  margin-left: 10px;
+  margin-top: 7px;
+  height: 29px;
+  border-radius: 4px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+}
+p:nth-child(odd){
+  background-color: rgb(244, 243, 243);
+}
+p > p:nth-child(odd){
+    background-color: rgb(199, 199, 199);
+}
+/* p{
+  background-color: rgba(0, 0, 255, 0.256);
+} */
